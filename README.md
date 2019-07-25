@@ -2,6 +2,8 @@
 
 > Simple Countdown component for [Vue.js](https://vuejs.org).
 
+* [Example](https://hebertsilva.github.io/vue-countdown/)
+
 ## Project setup
 
 In browser:
