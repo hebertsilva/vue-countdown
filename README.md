@@ -59,19 +59,6 @@ Vue.component(VueCountdown.name, VueCountdown)
 - Type: `Function`
 - Default: `null`
 
-## Browser support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Opera (latest)
-- Edge (latest)
-- Internet Explorer 9+
-
-## Versioning
-
-Maintained under the [Semantic Versioning guidelines](https://semver.org).
-
 ## License
 
 [MIT](https://opensource.org/licenses/MIT) © Hebert Silva
