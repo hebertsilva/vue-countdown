@@ -1,6 +1,4 @@
 .DS_Store
-node_modules
-/dist
 
 # local env files
 .env.local
@@ -11,6 +9,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Dependency directories
+node_modules/
+coverage/
+package-lock.json
+
+# Yarn Integrity file
+.yarn-integrity
+yarn.lock
+
 # Editor directories and files
 .idea
 .vscode
@@ -19,3 +26,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# app
+*.map

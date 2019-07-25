@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module"
+  },
+  "extends": [
+    "plugin:vue/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "Vue": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": "off",
+    "no-param-reassign": "off",
+    "valid-jsdoc": ["error", {
+      "requireReturn": false
+    }]
+  },
+  "overrides": [
+    {
+      "files": ["test/*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}
