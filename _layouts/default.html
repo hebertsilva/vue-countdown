@@ -18,6 +18,8 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    
   </head>
   <body>
     <header class="page-header" role="banner">
@@ -33,7 +35,10 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <countdown :time="20" />
+      
+      <div id="app">
+        <countdown :time="20" />
+      </div>
 
       {{ content }}
 
@@ -45,11 +50,34 @@
       </footer>
     </main>
 
-    <script type="module">
-      import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.esm.browser.js';
-      import VueCoutndown from 'https://raw.githubusercontent.com/hebertsilva/vue-countdown/master/dist/vue-countdown.min.js';
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="{{ '/assets/js/vue-countdown.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
-      Vue.component(VueCoutndown.name, VueCoutndown);
+    <script async>
+      window.onload = function () {
+        Vue.component(VueCountdown.name, VueCountdown);
+
+        new Vue({
+          el: '#app',
+          data: function () {
+            var now = new Date();
+            var newYear = new Date(now.getFullYear() + 1, 0, 1);
+
+            return {
+              counting: false,
+              time: newYear - now,
+            };
+          },
+          methods: {
+            startCountdown: function () {
+              this.counting = true;
+            },
+            handleCountdownEnd: function () {
+              this.counting = false;
+            },
+          }
+        });
+      };
     </script>
   </body>
 </html>
