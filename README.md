@@ -3,9 +3,6 @@
 > Simple Countdown component for [Vue.js](https://vuejs.org).
 
 ## Project setup
-```shell
-yarn install
-```
 
 In browser:
 
@@ -19,23 +16,46 @@ In browser:
 
 ```js
 import Vue from 'vue'
-import VueCountdown from '@chenfengyuan/vue-countdown'
+import VueCountdown from 'vue-countdown'
 Vue.component(VueCountdown.name, VueCountdown)
 ```
 
 ```html
-<countdown :time="2 * 24 * 60 * 60 * 1000" :onComplete="setFunctionOnComplete" />
-<!-- <span>Time Remaining：1 days, 23 hours, 59 minutes, 59 seconds.</span> -->
+<countdown :time="20" :onComplete="setFunctionOnComplete" :labels="['Days', 'Hours', 'Minutes', 'Seconds']" />
+<!-- 
+    <ol>
+        <li>
+            <span class="time">00</span>
+            <span class="label">Days</span>
+        </li>
+        <li>
+            <span class="time">21</span>
+            <span class="label">Horus</span>
+        </li>
+        <li>
+            <span class="time">19</span>
+            <span class="label">Minutes</span>
+        </li>
+        <li>
+            <span class="time">47</span>
+            <span class="label">Seconds</span>
+        </li>
+    </ol>
+ -->
 ```
 
 ## Props
 
 ### time
 
-- Type: `Number`
+- Type: `Number` *// Minutes*
 - Default: `0`
 
-### omComplete
+### labels
+- Type: `Array`
+- Default: `['Days', 'Hours', 'Minutes', 'Seconds']`
+
+### onComplete
 - Type: `Function`
 - Default: `null`
 
