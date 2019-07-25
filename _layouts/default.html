@@ -19,7 +19,49 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    
+    <style type="text/css">
+      .base-countdown {
+        text-align: center;
+        color: #000;
+        padding: 30px;
+        border: 1px solid #dce6f0;
+      }
+
+      .base-countdown li {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .base-countdown li:not(:last-child) .time {
+        position: relative;
+      }
+
+      .base-countdown li:not(:last-child) .time:after {
+        content: ":";
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: -7px;
+        height: 100%;
+        line-height: normal;
+      }
+
+      .base-countdown span {
+        display: block;
+      }
+
+      .base-countdown .time {
+        min-width: 100px;
+        padding: 0 20px;
+        font-size: 54px;
+        font-weight: 900;
+      }
+      .base-countdown .label {
+        font-size: 20px;
+        margin-top: 10px;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <header class="page-header" role="banner">
@@ -37,7 +79,11 @@
     <main id="content" class="main-content" role="main">
       
       <div id="app">
-        <countdown :time="20" />
+        <h1 id="vue-countdown">Example</h1>
+
+        <div class="base-countdown">
+          <countdown :time="2000" />
+        </div>
       </div>
 
       {{ content }}

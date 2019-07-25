@@ -1,11 +1,11 @@
 /*!
- * vue-countdown v0.1.0
+ * vue-countdown v1.0.0
  * https://github.com/hebertsilva/vue-countdown#readme
  *
  * Copyright 2019-present Hebert Silva
  * Released under the MIT license
  *
- * Date: 2019-07-25T19:27:40.982Z
+ * Date: 2019-07-25T20:37:54.371Z
  */
 
 'use strict';

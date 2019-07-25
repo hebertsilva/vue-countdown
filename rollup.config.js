@@ -30,7 +30,13 @@ module.exports = {
       banner,
       file: `dist/${pkg.name}.esm.js`,
       format: 'esm'
-    }
+    },
+    {
+      banner,
+      name,
+      file: `assets/js/${pkg.name}.js`,
+      format: 'umd'
+    },
   ],
   plugins: [babel()]
 }
