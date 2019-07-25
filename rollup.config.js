@@ -1,4 +1,3 @@
-// const serve = require('rollup-plugin-serve')
 const babel = require('rollup-plugin-babel')
 const changeCase = require('change-case')
 const createBanner = require('create-banner')

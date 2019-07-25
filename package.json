@@ -1,6 +1,7 @@
 {
   "name": "vue-countdown",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Simple Countdown component for Vue.js",
   "main": "dist/vue-countdown.common.js",
   "module": "dist/vue-countdown.esm.js",
   "browser": "dist/vue-countdown.js",
@@ -11,7 +12,6 @@
   "private": true,
   "scripts": {
     "dev": "rollup -c -m -w",
-    "open": "vue-cli-service build --dest public/ public/main.js && vue-cli-service serve --open public/",
     "codecov": "cat coverage/lcov.info | codecov",
     "compress": "uglifyjs ./dist/vue-countdown.js -o ./dist/vue-countdown.min.js -c -m --comments /^!/",
     "build": "rollup -c",
@@ -20,19 +20,35 @@
     "start": "npm run dev",
     "test": "karma start"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hebertsilva/vue-countdown.git"
+  },
+  "keywords": [
+    "countdown",
+    "component",
+    "vue-component",
+    "html",
+    "css",
+    "javascript",
+    "front-end",
+    "web"
+  ],
+  "author": {
+    "name": "Hebert Silva",
+    "url": "https://github.com/hebertsilva"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hebertsilva/vue-countdown/issues"
+  },
   "dependencies": {
-    "core-js": "^2.6.5",
     "puppeteer": "^1.19.0",
-    "rollup-plugin-serve": "^1.0.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "@vue/cli-plugin-babel": "^3.9.0",
-    "@vue/cli-plugin-eslint": "^3.9.0",
-    "@vue/cli-service": "^3.9.0",
-    "@vue/test-utils": "^1.0.0-beta.29",
     "babel-eslint": "^10.0.1",
     "babel-plugin-istanbul": "^5.2.0",
     "chai": "^4.2.0",
@@ -56,25 +72,6 @@
     "rollup-watch": "^4.3.1",
     "vue-template-compiler": "^2.6.10",
     "uglify-js": "^3.6.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
   },
   "browserslist": [
     "> 1%",

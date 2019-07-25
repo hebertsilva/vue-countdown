@@ -16,7 +16,7 @@ package-lock.json
 
 # Yarn Integrity file
 .yarn-integrity
-yarn.lock
+# yarn.lock
 
 # Editor directories and files
 .idea
