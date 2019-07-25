@@ -5,7 +5,7 @@
  * Copyright 2019-present Hebert Silva
  * Released under the MIT license
  *
- * Date: 2019-07-25T20:37:54.371Z
+ * Date: 2019-07-25T20:43:12.191Z
  */
 
 (function (global, factory) {
