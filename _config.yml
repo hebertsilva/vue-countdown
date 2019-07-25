@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
+show_downloads: true
 github:
-  zip_url: https://github.com/hebertsilva/vue-countdown/archive/master.zip
+  zip_url: https://github.com/hebertsilva/vue-countdown/archive/v1.0.0.zip
+  tar_url: https://github.com/hebertsilva/vue-countdown/archive/v1.0.0.tar.gz
