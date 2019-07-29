@@ -9,7 +9,6 @@
     "src",
     "dist"
   ],
-  "private": true,
   "scripts": {
     "dev": "rollup -c -m -w",
     "codecov": "cat coverage/lcov.info | codecov",
