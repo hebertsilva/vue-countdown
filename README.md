@@ -18,7 +18,7 @@ In browser:
 
 ```js
 import Vue from 'vue'
-import VueCountdown from 'vue-countdown'
+import VueCountdown from '@hebertsilva/vue-countdown'
 Vue.component(VueCountdown.name, VueCountdown)
 ```
 

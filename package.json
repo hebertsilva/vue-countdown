@@ -1,5 +1,5 @@
 {
-  "name": "vue-countdown",
+  "name": "@hebertsilva/vue-countdown",
   "version": "1.0.0",
   "description": "Simple Countdown component for Vue.js",
   "main": "dist/vue-countdown.common.js",
